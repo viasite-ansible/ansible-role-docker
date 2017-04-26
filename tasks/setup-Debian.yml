@@ -9,8 +9,8 @@
 
 - name: Add Docker apt key.
   apt_key:
-    url: https://apt.dockerproject.org/gpg
-    id: 58118E89F3A912897C070ADBF76221572C52609D
+    url: "{{ docker_apt_key_url }}"
+    id: "{{ docker_apt_key_id }}"
     state: present
 
 - name: Add Docker repository.

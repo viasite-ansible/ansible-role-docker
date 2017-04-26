@@ -7,6 +7,8 @@ docker_compose_version: "1.11.2"
 
 # Used only for Debian/Ubuntu. Add 'testing' if you don't want stable.
 docker_apt_repository: "deb https://apt.dockerproject.org/repo {{ ansible_distribution|lower }}-{{ ansible_distribution_release }} main"
+docker_apt_key_url: https://apt.dockerproject.org/gpg
+docker_apt_key_id: 58118E89F3A912897C070ADBF76221572C52609D
 
 # Used only for RedHat/CentOS.
 docker_yum_repo_version: 'main' # 'testing', 'beta', 'nightly'
