@@ -1,0 +1,16 @@
+---
+# cannot test with docker: /etc/hosts not writable
+driver:
+  name: vagrant
+vagrant:
+  platforms:
+    - name: xenial64
+      box: bento/ubuntu-16.04
+  providers:
+    - name: virtualbox
+      type: virtualbox
+  instances:
+    - name: vagrant-01
+
+ansible:
+  playbook: tests/playbook.yml
