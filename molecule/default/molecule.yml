@@ -1,0 +1,15 @@
+---
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+platforms:
+  - name: xenial64
+    box: bento/ubuntu-16.04
+
+lint:
+  name: yamllint
+  enabled: False
+
+provisioner:
+  name: ansible
