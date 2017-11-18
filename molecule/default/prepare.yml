@@ -1,6 +1,7 @@
 ---
 - name: Prepare
   hosts: all
+  become: yes # for vagrant
   gather_facts: False
   tasks:
     - name: apt-proxy
